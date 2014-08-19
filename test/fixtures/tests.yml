@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  autorizo: 1
+  embriaguez: 1
+  grado: 1
+  psicoactivas: 1
+
+two:
+  autorizo: 1
+  embriaguez: 1
+  grado: 1
+  psicoactivas: 1

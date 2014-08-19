@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Insurer:</strong>
+  <%= @list_insurer.insurer_id %>
+</p>
+
+<p>
+  <strong>Type insurer:</strong>
+  <%= @list_insurer.type_insurer_id %>
+</p>
+
+<p>
+  <strong>Poliza:</strong>
+  <%= @list_insurer.poliza %>
+</p>
+
+<p>
+  <strong>Vencimiento:</strong>
+  <%= @list_insurer.vencimiento %>
+</p>
+
+<%= link_to 'Edit', edit_list_insurer_path(@list_insurer) %> |
+<%= link_to 'Back', list_insurers_path %>

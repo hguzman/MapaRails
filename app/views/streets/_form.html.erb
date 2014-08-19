@@ -1,0 +1,53 @@
+<%= form_for(@street) do |f| %>
+  <% if @street.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@street.errors.count, "error") %> prohibited this street from being saved:</h2>
+
+      <ul>
+      <% @street.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :accident_id %><br>
+    <%= f.number_field :accident_id %>
+  </div>
+  <div class="field">
+    <%= f.label :via %><br>
+    <%= f.number_field :via %>
+  </div>
+  <div class="field">
+    <%= f.label :geometria %><br>
+    <%= f.number_field :geometria %>
+  </div>
+  <div class="field">
+    <%= f.label :utilizacion %><br>
+    <%= f.number_field :utilizacion %>
+  </div>
+  <div class="field">
+    <%= f.label :calzadas %><br>
+    <%= f.number_field :calzadas %>
+  </div>
+  <div class="field">
+    <%= f.label :carriles %><br>
+    <%= f.number_field :carriles %>
+  </div>
+  <div class="field">
+    <%= f.label :superficie %><br>
+    <%= f.number_field :superficie %>
+  </div>
+  <div class="field">
+    <%= f.label :controles %><br>
+    <%= f.number_field :controles %>
+  </div>
+  <div class="field">
+    <%= f.label :visibilidad %><br>
+    <%= f.number_field :visibilidad %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

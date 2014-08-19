@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  insurer_id: 1
+  type_insurer_id: 1
+  poliza: 1
+  vencimiento: 2014-08-19
+
+two:
+  insurer_id: 1
+  type_insurer_id: 1
+  poliza: 1
+  vencimiento: 2014-08-19

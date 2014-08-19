@@ -1,0 +1,55 @@
+<h1>Listing drivers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gravedad</th>
+      <th>Direccion</th>
+      <th>Telefono</th>
+      <th>Ciudad</th>
+      <th>Porta licencia</th>
+      <th>Num licencia</th>
+      <th>Categoria</th>
+      <th>Restriccion</th>
+      <th>Expven</th>
+      <th>Fecha expven at</th>
+      <th>Cod transito</th>
+      <th>Chaleco</th>
+      <th>Casco</th>
+      <th>Cinturon</th>
+      <th>Hospital</th>
+      <th>Lesiones</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @drivers.each do |driver| %>
+      <tr>
+        <td><%= driver.gravedad %></td>
+        <td><%= driver.direccion %></td>
+        <td><%= driver.telefono %></td>
+        <td><%= driver.ciudad %></td>
+        <td><%= driver.porta_licencia %></td>
+        <td><%= driver.num_licencia %></td>
+        <td><%= driver.categoria %></td>
+        <td><%= driver.restriccion %></td>
+        <td><%= driver.expven %></td>
+        <td><%= driver.fecha_expven_at %></td>
+        <td><%= driver.cod_transito %></td>
+        <td><%= driver.chaleco %></td>
+        <td><%= driver.casco %></td>
+        <td><%= driver.cinturon %></td>
+        <td><%= driver.hospital %></td>
+        <td><%= driver.lesiones %></td>
+        <td><%= link_to 'Show', driver %></td>
+        <td><%= link_to 'Edit', edit_driver_path(driver) %></td>
+        <td><%= link_to 'Destroy', driver, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Driver', new_driver_path %>

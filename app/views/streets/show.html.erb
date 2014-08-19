@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accident:</strong>
+  <%= @street.accident_id %>
+</p>
+
+<p>
+  <strong>Via:</strong>
+  <%= @street.via %>
+</p>
+
+<p>
+  <strong>Geometria:</strong>
+  <%= @street.geometria %>
+</p>
+
+<p>
+  <strong>Utilizacion:</strong>
+  <%= @street.utilizacion %>
+</p>
+
+<p>
+  <strong>Calzadas:</strong>
+  <%= @street.calzadas %>
+</p>
+
+<p>
+  <strong>Carriles:</strong>
+  <%= @street.carriles %>
+</p>
+
+<p>
+  <strong>Superficie:</strong>
+  <%= @street.superficie %>
+</p>
+
+<p>
+  <strong>Controles:</strong>
+  <%= @street.controles %>
+</p>
+
+<p>
+  <strong>Visibilidad:</strong>
+  <%= @street.visibilidad %>
+</p>
+
+<%= link_to 'Edit', edit_street_path(@street) %> |
+<%= link_to 'Back', streets_path %>

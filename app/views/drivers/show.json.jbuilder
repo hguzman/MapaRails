@@ -1,0 +1,1 @@
+json.extract! @driver, :id, :gravedad, :direccion, :telefono, :ciudad, :porta_licencia, :num_licencia, :categoria, :restriccion, :expven, :fecha_expven_at, :cod_transito, :chaleco, :casco, :cinturon, :hospital, :lesiones, :created_at, :updated_at

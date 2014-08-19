@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  document_id: 1
+  identificacion: 1
+  nombre: MyString
+  nacionalidad: MyString
+  nacimiento: 2014-08-19
+  sexo: 1
+  direccion: MyString
+  telefono: 1
+  test_id: 1
+
+two:
+  document_id: 1
+  identificacion: 1
+  nombre: MyString
+  nacionalidad: MyString
+  nacimiento: 2014-08-19
+  sexo: 1
+  direccion: MyString
+  telefono: 1
+  test_id: 1

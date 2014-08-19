@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  placa: MyString
+  nacionalidad: MyString
+  brand_id: 1
+  linea: MyString
+  colod_id: 1
+  modelo: 1
+  carroceria: MyString
+  toneladas: 1
+  pasajeros: 1
+  licencia_transito: MyString
+  empresa: MyString
+  nit: 1
+  matriculado_en: MyString
+  inmovilizado_en: MyString
+  deposito: MyString
+  registro: 1
+  revision_sino: 1
+  revision_numero: 1
+  acompanantes: 1
+  class_vehicle_id: 1
+  modalidad: 1
+  radio_accion: 1
+  danos_materiales: MyString
+  lugar_impacto: 1
+
+two:
+  placa: MyString
+  nacionalidad: MyString
+  brand_id: 1
+  linea: MyString
+  colod_id: 1
+  modelo: 1
+  carroceria: MyString
+  toneladas: 1
+  pasajeros: 1
+  licencia_transito: MyString
+  empresa: MyString
+  nit: 1
+  matriculado_en: MyString
+  inmovilizado_en: MyString
+  deposito: MyString
+  registro: 1
+  revision_sino: 1
+  revision_numero: 1
+  acompanantes: 1
+  class_vehicle_id: 1
+  modalidad: 1
+  radio_accion: 1
+  danos_materiales: MyString
+  lugar_impacto: 1

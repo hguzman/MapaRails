@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Autorizo:</strong>
+  <%= @test.autorizo %>
+</p>
+
+<p>
+  <strong>Embriaguez:</strong>
+  <%= @test.embriaguez %>
+</p>
+
+<p>
+  <strong>Grado:</strong>
+  <%= @test.grado %>
+</p>
+
+<p>
+  <strong>Psicoactivas:</strong>
+  <%= @test.psicoactivas %>
+</p>
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>

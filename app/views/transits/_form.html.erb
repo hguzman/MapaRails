@@ -1,0 +1,21 @@
+<%= form_for(@transit) do |f| %>
+  <% if @transit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transit.errors.count, "error") %> prohibited this transit from being saved:</h2>
+
+      <ul>
+      <% @transit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :transito %><br>
+    <%= f.text_field :transito %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

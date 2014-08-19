@@ -1,0 +1,71 @@
+<h1>Listing vehicles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Placa</th>
+      <th>Nacionalidad</th>
+      <th>Brand</th>
+      <th>Linea</th>
+      <th>Colod</th>
+      <th>Modelo</th>
+      <th>Carroceria</th>
+      <th>Toneladas</th>
+      <th>Pasajeros</th>
+      <th>Licencia transito</th>
+      <th>Empresa</th>
+      <th>Nit</th>
+      <th>Matriculado en</th>
+      <th>Inmovilizado en</th>
+      <th>Deposito</th>
+      <th>Registro</th>
+      <th>Revision sino</th>
+      <th>Revision numero</th>
+      <th>Acompanantes</th>
+      <th>Class vehicle</th>
+      <th>Modalidad</th>
+      <th>Radio accion</th>
+      <th>Danos materiales</th>
+      <th>Lugar impacto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehicles.each do |vehicle| %>
+      <tr>
+        <td><%= vehicle.placa %></td>
+        <td><%= vehicle.nacionalidad %></td>
+        <td><%= vehicle.brand_id %></td>
+        <td><%= vehicle.linea %></td>
+        <td><%= vehicle.colod_id %></td>
+        <td><%= vehicle.modelo %></td>
+        <td><%= vehicle.carroceria %></td>
+        <td><%= vehicle.toneladas %></td>
+        <td><%= vehicle.pasajeros %></td>
+        <td><%= vehicle.licencia_transito %></td>
+        <td><%= vehicle.empresa %></td>
+        <td><%= vehicle.nit %></td>
+        <td><%= vehicle.matriculado_en %></td>
+        <td><%= vehicle.inmovilizado_en %></td>
+        <td><%= vehicle.deposito %></td>
+        <td><%= vehicle.registro %></td>
+        <td><%= vehicle.revision_sino %></td>
+        <td><%= vehicle.revision_numero %></td>
+        <td><%= vehicle.acompanantes %></td>
+        <td><%= vehicle.class_vehicle_id %></td>
+        <td><%= vehicle.modalidad %></td>
+        <td><%= vehicle.radio_accion %></td>
+        <td><%= vehicle.danos_materiales %></td>
+        <td><%= vehicle.lugar_impacto %></td>
+        <td><%= link_to 'Show', vehicle %></td>
+        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
+        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vehicle', new_vehicle_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @person.document_id %>
+</p>
+
+<p>
+  <strong>Identificacion:</strong>
+  <%= @person.identificacion %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @person.nombre %>
+</p>
+
+<p>
+  <strong>Nacionalidad:</strong>
+  <%= @person.nacionalidad %>
+</p>
+
+<p>
+  <strong>Nacimiento:</strong>
+  <%= @person.nacimiento %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @person.sexo %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @person.direccion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @person.telefono %>
+</p>
+
+<p>
+  <strong>Test:</strong>
+  <%= @person.test_id %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

@@ -1,0 +1,2 @@
+module ClassVehiclesHelper
+end

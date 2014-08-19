@@ -1,0 +1,81 @@
+<%= form_for(@driver) do |f| %>
+  <% if @driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+
+      <ul>
+      <% @driver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gravedad %><br>
+    <%= f.number_field :gravedad %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.number_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad %><br>
+    <%= f.text_field :ciudad %>
+  </div>
+  <div class="field">
+    <%= f.label :porta_licencia %><br>
+    <%= f.number_field :porta_licencia %>
+  </div>
+  <div class="field">
+    <%= f.label :num_licencia %><br>
+    <%= f.number_field :num_licencia %>
+  </div>
+  <div class="field">
+    <%= f.label :categoria %><br>
+    <%= f.text_field :categoria %>
+  </div>
+  <div class="field">
+    <%= f.label :restriccion %><br>
+    <%= f.number_field :restriccion %>
+  </div>
+  <div class="field">
+    <%= f.label :expven %><br>
+    <%= f.number_field :expven %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_expven_at %><br>
+    <%= f.date_select :fecha_expven_at %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_transito %><br>
+    <%= f.number_field :cod_transito %>
+  </div>
+  <div class="field">
+    <%= f.label :chaleco %><br>
+    <%= f.number_field :chaleco %>
+  </div>
+  <div class="field">
+    <%= f.label :casco %><br>
+    <%= f.number_field :casco %>
+  </div>
+  <div class="field">
+    <%= f.label :cinturon %><br>
+    <%= f.number_field :cinturon %>
+  </div>
+  <div class="field">
+    <%= f.label :hospital %><br>
+    <%= f.text_field :hospital %>
+  </div>
+  <div class="field">
+    <%= f.label :lesiones %><br>
+    <%= f.text_field :lesiones %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

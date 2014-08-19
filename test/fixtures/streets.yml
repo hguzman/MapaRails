@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accident_id: 1
+  via: 1
+  geometria: 1
+  utilizacion: 1
+  calzadas: 1
+  carriles: 1
+  superficie: 1
+  controles: 1
+  visibilidad: 1
+
+two:
+  accident_id: 1
+  via: 1
+  geometria: 1
+  utilizacion: 1
+  calzadas: 1
+  carriles: 1
+  superficie: 1
+  controles: 1
+  visibilidad: 1

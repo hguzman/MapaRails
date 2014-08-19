@@ -1,0 +1,31 @@
+<h1>Listing list_insurers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Insurer</th>
+      <th>Type insurer</th>
+      <th>Poliza</th>
+      <th>Vencimiento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @list_insurers.each do |list_insurer| %>
+      <tr>
+        <td><%= list_insurer.insurer_id %></td>
+        <td><%= list_insurer.type_insurer_id %></td>
+        <td><%= list_insurer.poliza %></td>
+        <td><%= list_insurer.vencimiento %></td>
+        <td><%= link_to 'Show', list_insurer %></td>
+        <td><%= link_to 'Edit', edit_list_insurer_path(list_insurer) %></td>
+        <td><%= link_to 'Destroy', list_insurer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New List insurer', new_list_insurer_path %>

@@ -1,0 +1,113 @@
+<%= form_for(@vehicle) do |f| %>
+  <% if @vehicle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+      <% @vehicle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :placa %><br>
+    <%= f.text_field :placa %>
+  </div>
+  <div class="field">
+    <%= f.label :nacionalidad %><br>
+    <%= f.text_field :nacionalidad %>
+  </div>
+  <div class="field">
+    <%= f.label :brand_id %><br>
+    <%= f.number_field :brand_id %>
+  </div>
+  <div class="field">
+    <%= f.label :linea %><br>
+    <%= f.text_field :linea %>
+  </div>
+  <div class="field">
+    <%= f.label :colod_id %><br>
+    <%= f.number_field :colod_id %>
+  </div>
+  <div class="field">
+    <%= f.label :modelo %><br>
+    <%= f.number_field :modelo %>
+  </div>
+  <div class="field">
+    <%= f.label :carroceria %><br>
+    <%= f.text_field :carroceria %>
+  </div>
+  <div class="field">
+    <%= f.label :toneladas %><br>
+    <%= f.number_field :toneladas %>
+  </div>
+  <div class="field">
+    <%= f.label :pasajeros %><br>
+    <%= f.number_field :pasajeros %>
+  </div>
+  <div class="field">
+    <%= f.label :licencia_transito %><br>
+    <%= f.text_field :licencia_transito %>
+  </div>
+  <div class="field">
+    <%= f.label :empresa %><br>
+    <%= f.text_field :empresa %>
+  </div>
+  <div class="field">
+    <%= f.label :nit %><br>
+    <%= f.number_field :nit %>
+  </div>
+  <div class="field">
+    <%= f.label :matriculado_en %><br>
+    <%= f.text_field :matriculado_en %>
+  </div>
+  <div class="field">
+    <%= f.label :inmovilizado_en %><br>
+    <%= f.text_field :inmovilizado_en %>
+  </div>
+  <div class="field">
+    <%= f.label :deposito %><br>
+    <%= f.text_field :deposito %>
+  </div>
+  <div class="field">
+    <%= f.label :registro %><br>
+    <%= f.number_field :registro %>
+  </div>
+  <div class="field">
+    <%= f.label :revision_sino %><br>
+    <%= f.number_field :revision_sino %>
+  </div>
+  <div class="field">
+    <%= f.label :revision_numero %><br>
+    <%= f.number_field :revision_numero %>
+  </div>
+  <div class="field">
+    <%= f.label :acompanantes %><br>
+    <%= f.number_field :acompanantes %>
+  </div>
+  <div class="field">
+    <%= f.label :class_vehicle_id %><br>
+    <%= f.number_field :class_vehicle_id %>
+  </div>
+  <div class="field">
+    <%= f.label :modalidad %><br>
+    <%= f.number_field :modalidad %>
+  </div>
+  <div class="field">
+    <%= f.label :radio_accion %><br>
+    <%= f.number_field :radio_accion %>
+  </div>
+  <div class="field">
+    <%= f.label :danos_materiales %><br>
+    <%= f.text_field :danos_materiales %>
+  </div>
+  <div class="field">
+    <%= f.label :lugar_impacto %><br>
+    <%= f.number_field :lugar_impacto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
