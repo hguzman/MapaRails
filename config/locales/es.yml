@@ -1,4 +1,10 @@
 es:
+  unauthorized:
+      manage:
+        all: "Usted no esta autorizado para acceder a este recurso."
+        user: "No se le permite administrar otras cuentas de usuario"
+      update:
+        project: "Not allowed to update this project."
   date:
     abbr_day_names:
     - dom

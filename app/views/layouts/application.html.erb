@@ -16,11 +16,9 @@
         <%= render 'layouts/navigation' %>      
     </header>
     
-    <div class="row">
-        <%= render 'layouts/messages' %>
-        <%= yield %>
+    <%= render 'layouts/messages' %>
+    <%= yield %>
       
-    </div>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

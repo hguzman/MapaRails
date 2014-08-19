@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
   before_action :set_locale
 
   def set_locale
@@ -13,4 +12,12 @@ class ApplicationController < ActionController::Base
   end
   
   protect_from_forgery with: :exception
+
+  rescue_from CanCan::AccessDenied do |exception|
+   redirect_to root_path, :alert => exception.message
+  end
+
+  def after_sign_in_path_for(user)
+    inicio_index_path
+  end
 end

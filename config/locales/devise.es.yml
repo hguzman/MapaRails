@@ -13,6 +13,7 @@ es:
     vista:
       registrar_usuario: 'Registrar Usuario'
       olvido_contrasena: '¿Olvido Su contraseña?'
+      iniciar_sersion: 'Iniciar Sesión'
     failure:
       already_authenticated: 'Ya iniciaste sesión.'
       unauthenticated: 'Tienes que registrarte o iniciar sesión antes de continuar.'
