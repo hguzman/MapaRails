@@ -2,8 +2,8 @@
   <h1>Menu</h1>
 
   <ul>
-    <% @menu.each do |menu| %>
-      <li><%= menu %></li>    
+    <% @menu.each do |menu,valor| %>
+    <li><%= link_to menu, valor %></li>
     <% end %>
   </ul>  
 </div>

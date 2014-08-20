@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Accident: MyString
   informe: 1
   transito: 1
   transit_id: 1
@@ -10,8 +9,8 @@ one:
   longitud: 1.5
   direccion: MyString
   localidad: MyString
-  fecha_ocurrencia_at: 2014-08-19 07:27:41
-  fecha_levantamiento_at: 2014-08-19 07:27:41
+  fecha_ocurrencia_at: 2014-08-19
+  fecha_levantamiento_at: 2014-08-19
   clase_accidente: 1
   choque_con: 1
   objeto_fijo: 1
@@ -22,7 +21,6 @@ one:
   clima: 1
 
 two:
-  Accident: MyString
   informe: 1
   transito: 1
   transit_id: 1
@@ -31,8 +29,8 @@ two:
   longitud: 1.5
   direccion: MyString
   localidad: MyString
-  fecha_ocurrencia_at: 2014-08-19 07:27:41
-  fecha_levantamiento_at: 2014-08-19 07:27:41
+  fecha_ocurrencia_at: 2014-08-19
+  fecha_levantamiento_at: 2014-08-19
   clase_accidente: 1
   choque_con: 1
   objeto_fijo: 1

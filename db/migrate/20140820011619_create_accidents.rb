@@ -1,7 +1,6 @@
-class CreateModelos < ActiveRecord::Migration
+class CreateAccidents < ActiveRecord::Migration
   def change
-    create_table :modelos do |t|
-      t.string :Accident
+    create_table :accidents do |t|
       t.integer :informe
       t.integer :transito
       t.integer :transit_id
@@ -10,8 +9,8 @@ class CreateModelos < ActiveRecord::Migration
       t.float :longitud
       t.string :direccion
       t.string :localidad
-      t.datetime :fecha_ocurrencia_at
-      t.datetime :fecha_levantamiento_at
+      t.date :fecha_ocurrencia_at
+      t.date :fecha_levantamiento_at
       t.integer :clase_accidente
       t.integer :choque_con
       t.integer :objeto_fijo

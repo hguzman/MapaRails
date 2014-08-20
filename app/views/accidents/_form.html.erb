@@ -1,0 +1,98 @@
+
+<%= form_for(@accident) do |f| %>
+  <% if @accident.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accident.errors.count, "error") %> prohibited this accident from being saved:</h2>
+
+      <ul>
+      <% @accident.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="large-4 columns">
+    <div class="row">
+      <label for=""><%= f.label :informe %></label>
+      <%= f.number_field :informe %>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :informe %></div>
+      <div class="large-8 columns"><%= f.number_field :informe %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :transito %></div>
+      <div class="large-8 columns"><%= f.number_field :transito %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :transit_id %></div>
+      <div class="large-8 columns"><%= f.number_field :transit_id %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :gravedad %></div>
+      <div class="large-8 columns"><%= f.number_field :gravedad %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :latitud %></div>
+      <div class="large-8 columns"><%= f.text_field :latitud %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :longitud %></div>
+      <div class="large-8 columns"><%= f.text_field :longitud %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :direccion %></div>
+      <div class="large-8 columns"><%= f.text_field :direccion %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :localidad %></div>
+      <div class="large-8 columns"><%= f.text_field :localidad %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :fecha_ocurrencia_at %></div>
+      <div class="large-8 columns"> <%= f.date_select :fecha_ocurrencia_at %></div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"><%= f.label :fecha_levantamiento_at %></div>
+      <div class="large-8 columns"><%= f.date_select :fecha_levantamiento_at %></div>
+    </div>
+
+    <div class="field">
+      <%= f.label :clase_accidente %><br>
+      <%= f.number_field :clase_accidente %>
+    </div>
+    <div class="field">
+      <%= f.label :choque_con %><br>
+      <%= f.number_field :choque_con %>
+    </div>
+    <div class="field">
+      <%= f.label :objeto_fijo %><br>
+      <%= f.number_field :objeto_fijo %>
+    </div>
+    <div class="field">
+      <%= f.label :area %><br>
+      <%= f.number_field :area %>
+    </div>
+    <div class="field">
+      <%= f.label :sector %><br>
+      <%= f.number_field :sector %>
+    </div>
+    <div class="field">
+      <%= f.label :zona %><br>
+      <%= f.number_field :zona %>
+    </div>
+    <div class="field">
+      <%= f.label :diseno %><br>
+      <%= f.number_field :diseno %>
+    </div>
+    <div class="field">
+      <%= f.label :clima %><br>
+      <%= f.number_field :clima %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </div>
+
+<% end %>  
+

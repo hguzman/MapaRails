@@ -1,99 +1,94 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Accident:</strong>
-  <%= @modelo.Accident %>
-</p>
-
-<p>
   <strong>Informe:</strong>
-  <%= @modelo.informe %>
+  <%= @accident.informe %>
 </p>
 
 <p>
   <strong>Transito:</strong>
-  <%= @modelo.transito %>
+  <%= @accident.transito %>
 </p>
 
 <p>
   <strong>Transit:</strong>
-  <%= @modelo.transit_id %>
+  <%= @accident.transit_id %>
 </p>
 
 <p>
   <strong>Gravedad:</strong>
-  <%= @modelo.gravedad %>
+  <%= @accident.gravedad %>
 </p>
 
 <p>
   <strong>Latitud:</strong>
-  <%= @modelo.latitud %>
+  <%= @accident.latitud %>
 </p>
 
 <p>
   <strong>Longitud:</strong>
-  <%= @modelo.longitud %>
+  <%= @accident.longitud %>
 </p>
 
 <p>
   <strong>Direccion:</strong>
-  <%= @modelo.direccion %>
+  <%= @accident.direccion %>
 </p>
 
 <p>
   <strong>Localidad:</strong>
-  <%= @modelo.localidad %>
+  <%= @accident.localidad %>
 </p>
 
 <p>
   <strong>Fecha ocurrencia at:</strong>
-  <%= @modelo.fecha_ocurrencia_at %>
+  <%= @accident.fecha_ocurrencia_at %>
 </p>
 
 <p>
   <strong>Fecha levantamiento at:</strong>
-  <%= @modelo.fecha_levantamiento_at %>
+  <%= @accident.fecha_levantamiento_at %>
 </p>
 
 <p>
   <strong>Clase accidente:</strong>
-  <%= @modelo.clase_accidente %>
+  <%= @accident.clase_accidente %>
 </p>
 
 <p>
   <strong>Choque con:</strong>
-  <%= @modelo.choque_con %>
+  <%= @accident.choque_con %>
 </p>
 
 <p>
   <strong>Objeto fijo:</strong>
-  <%= @modelo.objeto_fijo %>
+  <%= @accident.objeto_fijo %>
 </p>
 
 <p>
   <strong>Area:</strong>
-  <%= @modelo.area %>
+  <%= @accident.area %>
 </p>
 
 <p>
   <strong>Sector:</strong>
-  <%= @modelo.sector %>
+  <%= @accident.sector %>
 </p>
 
 <p>
   <strong>Zona:</strong>
-  <%= @modelo.zona %>
+  <%= @accident.zona %>
 </p>
 
 <p>
   <strong>Diseno:</strong>
-  <%= @modelo.diseno %>
+  <%= @accident.diseno %>
 </p>
 
 <p>
   <strong>Clima:</strong>
-  <%= @modelo.clima %>
+  <%= @accident.clima %>
 </p>
 
-<%= link_to 'Edit', edit_modelo_path(@modelo) %> |
-<%= link_to 'Back', modelos_path %>
+<%= link_to 'Edit', edit_accident_path(@accident) %> |
+<%= link_to 'Back', accidents_path %>

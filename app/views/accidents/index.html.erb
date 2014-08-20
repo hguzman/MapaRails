@@ -1,0 +1,59 @@
+<h1>Listing accidents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Informe</th>
+      <th>Transito</th>
+      <th>Transit</th>
+      <th>Gravedad</th>
+      <th>Latitud</th>
+      <th>Longitud</th>
+      <th>Direccion</th>
+      <th>Localidad</th>
+      <th>Fecha ocurrencia at</th>
+      <th>Fecha levantamiento at</th>
+      <th>Clase accidente</th>
+      <th>Choque con</th>
+      <th>Objeto fijo</th>
+      <th>Area</th>
+      <th>Sector</th>
+      <th>Zona</th>
+      <th>Diseno</th>
+      <th>Clima</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accidents.each do |accident| %>
+      <tr>
+        <td><%= accident.informe %></td>
+        <td><%= accident.transito %></td>
+        <td><%= accident.transit_id %></td>
+        <td><%= accident.gravedad %></td>
+        <td><%= accident.latitud %></td>
+        <td><%= accident.longitud %></td>
+        <td><%= accident.direccion %></td>
+        <td><%= accident.localidad %></td>
+        <td><%= accident.fecha_ocurrencia_at %></td>
+        <td><%= accident.fecha_levantamiento_at %></td>
+        <td><%= accident.clase_accidente %></td>
+        <td><%= accident.choque_con %></td>
+        <td><%= accident.objeto_fijo %></td>
+        <td><%= accident.area %></td>
+        <td><%= accident.sector %></td>
+        <td><%= accident.zona %></td>
+        <td><%= accident.diseno %></td>
+        <td><%= accident.clima %></td>
+        <td><%= link_to 'Show', accident %></td>
+        <td><%= link_to 'Edit', edit_accident_path(accident) %></td>
+        <td><%= link_to 'Destroy', accident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Accident', new_accident_path %>

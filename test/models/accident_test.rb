@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ModeloTest < ActiveSupport::TestCase
+class AccidentTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
