@@ -11,35 +11,90 @@
       </ul>
     </div>
   <% end %>
-  <div class="large-4 columns">
-    <div class="row">
-      <label for=""><%= f.label :informe %></label>
-      <%= f.number_field :informe %>
+  
+  <div class="row">
+    <div class="small-4 columns">
+      <div class="row">
+        <div class="small-4 columns">
+          <%= f.label :informe %>
+        </div>
+        <div class="small-8 columns">
+          <%= f.number_field :informe %>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="large-4 columns"><%= f.label :informe %></div>
-      <div class="large-8 columns"><%= f.number_field :informe %></div>
+    <div class="small-4 columns end">
+      <div class="row">
+        <div class="small-4 columns">
+          <%= f.label :transito %>
+        </div>
+        <div class="small-8 columns">
+          <%= f.number_field :transito %>
+        </div>
+        </div>      
+    </div>    
+  </div>
+
+  <div class="row">
+    <div class="small-4 columns">
+      <div class="row">
+        <div class="small-4 columns">
+          <%= f.label :transit_id %>
+        </div>
+        <div class="small-8 columns">
+         <%= f.number_field :transit_id %>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="large-4 columns"><%= f.label :transito %></div>
-      <div class="large-8 columns"><%= f.number_field :transito %></div>
+    <div class="small-4 columns end">
+      <div class="row">
+        <div class="small-4 columns">
+          <%= f.label :gravedad %>
+        </div>
+        <div class="small-8 columns">
+          <%= f.number_field :gravedad %>
+        </div>
+        </div>      
+    </div>    
+  </div>
+ <%= f.hidden_field :latitud %>
+ <%= f.hidden_field :longitud %>
+ <%= f.label :calle %>
+ <%= f.text_field :calle %>
+ <%= f.label :numero %>
+ <%= f.text_field :numero %>
+ <%= f.label :ciudad %>
+ <%= f.text_field :ciudad %>
+ <%= f.label :departamento %>
+ <%= f.text_field :departamento %>
+
+  <div class="row">
+    <div class="small-8 columns">
+      <div class="row">
+        <div class="small-4 columns">
+          <%= f.label :direccion %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-8 columns">
+          <%= f.text_field :direccion %>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="large-4 columns"><%= f.label :transit_id %></div>
-      <div class="large-8 columns"><%= f.number_field :transit_id %></div>
+  </div>
+  <div class="row">
+    <div class="small-4 columns">
+      <%= f.label :direccion %>
     </div>
-    <div class="row">
-      <div class="large-4 columns"><%= f.label :gravedad %></div>
-      <div class="large-8 columns"><%= f.number_field :gravedad %></div>
+    <div class="small-8 columns end">
+      <%= f.text_field :direccion %>
     </div>
-    <div class="row">
-      <div class="large-4 columns"><%= f.label :latitud %></div>
-      <div class="large-8 columns"><%= f.text_field :latitud %></div>
-    </div>
-    <div class="row">
-      <div class="large-4 columns"><%= f.label :longitud %></div>
-      <div class="large-8 columns"><%= f.text_field :longitud %></div>
-    </div>
+  </div>
+
+      
+
+  <div class="small-4 columns">
+ 
     <div class="row">
       <div class="large-4 columns"><%= f.label :direccion %></div>
       <div class="large-8 columns"><%= f.text_field :direccion %></div>

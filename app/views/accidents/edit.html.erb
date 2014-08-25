@@ -1,4 +1,32 @@
 <h1>Editing accident</h1>
+<div id='map' style="width: 600px; height: 400px"></div>
+<% content_for(:inline_javascript) do %>
+  <script type="text/javascript">
+      var latitud= <%= @latitud %>;
+      var longitud= <%= @longitud %>;
+      var map = new GMaps({
+        div: '#map',
+        zoom: 16,
+        lat: latitud,
+        lng: longitud
+      });
+      map.addMarker({
+        lat: <%= @latitud %>,
+        lng: <%= @longitud %>,
+        draggable: true,
+        title: 'Titulo',
+        dragend: function(e){
+          //alert(e.latLng.lat().toFixed(3));
+          //alert(e.latLng.lng().toFixed(3));
+          $('#accident_latitud').val(e.latLng.lat());
+          $('#accident_longitud').val(e.latLng.lng());
+        },
+        infoWindow: {
+          content: '<p><small><%= @direccion %></small></p>'
+        }
+      });
+  </script>
+<% end %>
 
 <%= render 'form' %>
 

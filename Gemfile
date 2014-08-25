@@ -12,6 +12,7 @@ gem 'foundation-rails'
 gem 'cancancan', '~> 1.9.2'
 gem 'rolify', '~> 3.4.0'
 gem 'devise', '~> 3.3.0'
+gem 'geocoder', '~> 1.2.4'
 
 gem 'sqlite3', group: :development
 gem 'spring', group: :development

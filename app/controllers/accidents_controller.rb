@@ -10,6 +10,9 @@ class AccidentsController < ApplicationController
   # GET /accidents/1
   # GET /accidents/1.json
   def show
+    @latitud=@accident.latitud
+    @longitud=@accident.longitud
+    @direccion=@accident.direccion
   end
 
   # GET /accidents/new
@@ -19,6 +22,10 @@ class AccidentsController < ApplicationController
 
   # GET /accidents/1/edit
   def edit
+    @latitud=@accident.latitud
+    @longitud=@accident.longitud
+    @direccion=@accident.direccion
+
   end
 
   # POST /accidents
@@ -69,6 +76,6 @@ class AccidentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def accident_params
-      params.require(:accident).permit(:informe, :transito, :transit_id, :gravedad, :latitud, :longitud, :direccion, :localidad, :fecha_ocurrencia_at, :fecha_levantamiento_at, :clase_accidente, :choque_con, :objeto_fijo, :area, :sector, :zona, :diseno, :clima)
+      params.require(:accident).permit(:informe, :transito, :transit_id, :gravedad, :latitud, :longitud, :direccion, :localidad, :fecha_ocurrencia_at, :fecha_levantamiento_at, :clase_accidente, :choque_con, :objeto_fijo, :area, :sector, :zona, :diseno, :clima, :calle, :numero, :ciudad, :departamento)
     end
 end

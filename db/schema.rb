@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140820011619) do
+ActiveRecord::Schema.define(version: 20140825001552) do
 
   create_table "accidents", force: true do |t|
     t.integer  "informe"
@@ -34,6 +34,10 @@ ActiveRecord::Schema.define(version: 20140820011619) do
     t.integer  "clima"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "calle"
+    t.string   "numero"
+    t.string   "ciudad"
+    t.string   "departamento"
   end
 
   create_table "class_vehicles", force: true do |t|
