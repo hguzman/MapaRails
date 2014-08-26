@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140825001552) do
+ActiveRecord::Schema.define(version: 20140826010624) do
 
   create_table "accidents", force: true do |t|
     t.integer  "informe"
@@ -22,8 +22,6 @@ ActiveRecord::Schema.define(version: 20140825001552) do
     t.float    "longitud"
     t.string   "direccion"
     t.string   "localidad"
-    t.date     "fecha_ocurrencia_at"
-    t.date     "fecha_levantamiento_at"
     t.integer  "clase_accidente"
     t.integer  "choque_con"
     t.integer  "objeto_fijo"
@@ -34,10 +32,8 @@ ActiveRecord::Schema.define(version: 20140825001552) do
     t.integer  "clima"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "calle"
-    t.string   "numero"
-    t.string   "ciudad"
-    t.string   "departamento"
+    t.datetime "fecha_ocurrencia_at"
+    t.datetime "fecha_levantamiento_at"
   end
 
   create_table "class_vehicles", force: true do |t|
@@ -90,30 +86,6 @@ ActiveRecord::Schema.define(version: 20140825001552) do
     t.integer  "type_insurer_id"
     t.integer  "poliza"
     t.date     "vencimiento"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "modelos", force: true do |t|
-    t.string   "Accident"
-    t.integer  "informe"
-    t.integer  "transito"
-    t.integer  "transit_id"
-    t.integer  "gravedad"
-    t.float    "latitud"
-    t.float    "longitud"
-    t.string   "direccion"
-    t.string   "localidad"
-    t.datetime "fecha_ocurrencia_at"
-    t.datetime "fecha_levantamiento_at"
-    t.integer  "clase_accidente"
-    t.integer  "choque_con"
-    t.integer  "objeto_fijo"
-    t.integer  "area"
-    t.integer  "sector"
-    t.integer  "zona"
-    t.integer  "diseno"
-    t.integer  "clima"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
